@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// - 每一个对象都由大括号包裹，每个键值对都由逗号隔开
+// - 属性名是由字符串和数字组成(''可以省略) 
+// - 属性值就是js数据类型的一种
+//   获取属性名所对应的属性值获取不到就是undefined
+ // 如果属性名重复，那下面的会覆盖上面的
+       let monkey = {
+           name : "sunwukong",
+           age : null,
+           ifantName : 'goodMonkey',
+           3 : 10000
+       };
+    //查
+    console.log(monkey[3])
+    console.log(monkey['3'])
+    console.log(monkey.name)
+    //新增和修查
+    console.log(monkey.w = 'ss')
+    console.log(monkey.name = '123')
+    //假删除
+    console.log(monkey['3'] = null)
+    //真删除
+    console.log(delete monkey['3'])
+
+  
+
+    </script>
+</body>
+</html>

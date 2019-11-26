@@ -1,0 +1,228 @@
+.body{
+    background: url(../img/overseas/backgroung.png) no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 514px;
+}
+.main{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 头部导航 */
+header{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    background: rgba(15,25,35,.6);
+}
+nav li{
+    float: left;
+}
+header nav a{
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    padding-right:15px;
+}
+header nav .left{
+    float: left;
+}
+header nav .right{
+    float: right;
+}
+/* 导航自定义列表 */
+.cont{
+    margin-top: 30px;
+}
+
+.cont .logo {
+    background: url(../img/overseas/xuebi.png) no-repeat;
+    width: 189px;
+    height: 25px;
+    background-position: -10px -11px;
+    float: left;
+}
+.cont nav{
+    float: left;
+}
+.cont nav a{
+    color: #fff;
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+dd dl{
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+    width: 100px;
+    height: 30px;
+    
+    
+}
+dd{
+    /* margin:20px; */line-height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    left: -37px;
+
+}
+
+.sing,
+.usa,
+.aus,
+.canada,
+.japen,
+.england,
+.tha,
+.germany,
+.new ,
+.france
+{
+    position: relative;
+}
+.sing:hover dl,
+.usa:hover dl,
+.aus:hover dl,
+.canada:hover dl,
+.japen:hover dl,
+.england:hover dl,
+.tha:hover dl,
+.germany:hover dl,
+.new:hover dl,
+.france:hover dl
+{
+    display: block;
+}
+/* text-title */
+.text{
+    /* display: block; */
+    width: 100%;
+    margin-top: 80px;
+}
+.text .title h{
+    font-size: 26px;
+    color: #fff;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.text .title a{
+    font-size: 68px;
+    line-height: 68px;
+    margin-bottom: 33px;
+    display: block;
+    font-weight: 700; 
+    color: #fff;
+    text-align: center;
+}
+/* cont-footer */
+.cont-footer{
+    position: relative;
+    margin-top: 80px;
+}
+.cont-footer .a{
+    position: absolute;
+    left: 180px;
+}
+.cont-footer a{
+    font-size: 16px;
+    color: #fff;
+    margin-right: 15px;
+    font-weight: 700;
+   
+}
+.input{
+    width: 850px;
+    height: 55px;
+    border: 10px solid #333;
+    position: absolute;
+    top: 35px;
+    left: 170px;
+}
+.cont-footer .where{
+    width: 730px;
+    height: 51px;
+}
+.cont-footer ::placeholder{
+    font-size: 15px;
+    padding-left: 10px;
+}
+.cont-footer .search{
+    width: 117px;
+    height: 55px;
+    border: 1px solid black;
+    background-color: #1273e1;
+    border: solid 1px #1273e1;
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.cont-footer .input .triangle{
+    width: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color:   transparent transparent #fff transparent;
+    margin-top: -20px;
+    margin-left: 13px;
+}
+    
+/* 中间列表 */
+.main-two{
+    width: 1000px;
+    margin: 0 auto;
+}
+.mid{
+    margin-top: 50px;
+}
+.mid li{
+    float: left;
+    width: 130px;
+    /* text-align: center; */
+    margin-right: 140px;
+}
+.mid .nomargin{
+    margin-right: 0;
+}
+
+.mid .team{
+    float: left;
+    background: url(../img/overseas/xuebi.png) no-repeat;
+    width: 42px;
+    height: 43px;
+    background-position: -10px -44px;
+}
+.mid .much{
+    float: left;
+    background: url(../img/overseas/xuebi.png) no-repeat;
+    width: 42px;
+    height: 43px;
+    background-position: -55px -44px;
+}
+.mid .serve{
+    float: left;
+    background: url(../img/overseas/xuebi.png) no-repeat;
+    width: 42px;
+    height: 43px;
+    background-position: -100px -44px;
+}
+.mid .flow{
+    float: left;
+    background: url(../img/overseas/xuebi.png) no-repeat;
+    width: 42px;
+    height: 45px;
+    background-position: -145px -44px;
+}
+.mid h2{
+    float: right;
+    color: #333;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 43px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>跑马灯</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    #box{
+        width:200px;
+        height: 200px;
+        background: red;
+    }
+    
+    
+    </style>
+</head>
+<body>
+  <div id="box" style="background: red;"></div>
+<script>
+    //想操作谁就获取谁
+    let box = document.getElementById('box');
+    console.dir(box);
+    //给相应事件绑定
+    box.onclick = function(){
+        let color = box.style.background;   //style操作的是行内样式 
+        switch(color){
+            case 'red':
+            box.style.background = 'green';
+            break;
+            case 'green':
+            box.style.background = 'orange';
+            break;
+            case 'orange' :
+            box.style.background = 'red';
+            // default:
+            // box.style.background = 'red';
+        }
+    }
+
+
+
+
+</script>
+</body>
+</html>

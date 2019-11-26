@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //数组的属性名是由浏览器自定，从0开始，依次递增，属性名代表属性值的位置 =》索引
+    
+    let ary = ['2', 2, true, false, undefined, {}, []];
+    // console.log(ary.length)
+    // console.log(ary.length = ary.length-1)
+    console.log(ary[ary.length-1])
+                     [ary.length-1]
+                           7-1
+                           6
+    //给数组新增一项
+    console.log(ary[ary.length] = 'sss')
+    console.log(ary)
+    删除最后一项
+    console.log(ary[ary.length-1]);
+    删除全部
+    console.log(ary.length = 0)
+
+
+    let ary = ['ss', 2, true, null];
+        ary.length = ary.length-1;
+        console.log(ary)
+        // ary[ary.length] = 'erYa';
+        // console.log(ary.length);  //4
+        // console.log(ary['length']);//4
+        // console.log(ary[ary.length-1]);//erYa
+        // console.log(ary[0])//'ss'
+        // ary.length = 0
+        // console.log(ary);   //Array:0
+        // console.log(ary[ary.length])  // [ary.length]代表的是 4  //undefined
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        let arr = [100,3,4,5,7,8]
+        for (var i=0; i<arr.length;i++){
+
+           console.log(i);         //0 1 2 3 4 5     
+           console.log(arr[i]);    // 100 3 4 5 7 8    //不懂含义
+           console.log(arr['i']);  //nudefined
+        }
+         
+
+
+       let obj = {
+           name : 'wss',
+           age : '18',
+           sex: 'female'
+       }
+       for(var key in obj ){
+           console.log(key);        //name  age   sex
+           console.log(obj[key]);   //wss   18   female
+           console.log(obj.date);   //nudefined
+       }
+    //for in 可以判断是私有属性还是共有属性
+    //   function Obj1(){
+    //       this.name = 1;
+    //       this.age = 3;
+    //   }
+    //   Obj1.Prototype.ss = 1;
+    // for(var key in Obj1){
+    //     if(var )
+    // }
+    
+
+
+        /*
+         ss(fn(function(m){m();return 5}))  
+                   M((function(){ console.log('哈哈');return 3}))
+        
+        */
+        
+    </script>
+</body>
+
+</html>

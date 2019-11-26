@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    #box{
+        width: 500px;
+        margin: 0 auto;
+        border: 2px solid red;
+        text-align: center;
+    }
+    li {
+        font-size: 20px;
+        color: pink;
+        line-height: 30px;
+        border:1px solid black ;
+    }
+    /* li:nth-child(odd){
+        background: red;
+    }
+    li:nth-child(even){
+      background: greed; 
+    }  */
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul id="list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    <script>
+    
+    let ul = document.getElementById('list');
+    let list = ul.getElementsByTagName('li');
+     
+     for(var i = 0; i <list.length; i++){
+         console.log(list[i]);   //<li>1</li>....<li>5</li>
+         if(i%2 === 0){
+             list[i].style.background = 'red';
+         }else{
+             list[i].style.background = 'green';
+         }
+
+        
+
+        if(i%2 === 0){
+             list[i].style.background = 'red';
+         }else{
+             list[i].style.background = 'green';
+         }
+
+
+           //鼠标移入事件
+         list[i].onmouseenter = function(){
+             this        //this  是当前操作的元素
+             color = this.style.background;   //划入时  保留之前的颜色
+            console.log(list[i])
+             this.style.background = 'orange';
+         }
+         //鼠标移出事件
+         list[i].onmouseout = function(){
+              this.style.background = color;
+         }
+     }
+   let color = null;
+
+    </script>
+</body>
+</html>

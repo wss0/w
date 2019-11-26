@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+       <script>
+// in 属性，他是检测一个对象中有没有某个属性名，如果有就返回true，反之就返回false
+        let obj = {
+            name: 22,
+            age: 33  
+        }
+        console.log('age' in obj);  // true
+        console.log('ss' in obj) // false
+
+        console.log(fn); // undefined
+    //  1.  if条件成立不成立都会进行变量提升
+        if ('fn' in window) {
+            // 如果条件成立，进来的后的第一件事就是给fn赋值，然后在执行代码
+            fn(); // 'erYa'
+            function fn() {
+                console.log('erYa');
+            }
+        }
+        fn();
+  //  2.函数里虽然return下面的代码不执行，但是要进行变量提升（var只声明不定义）
+        // function fn() {
+            //     console.log(ss); // undefined
+            //     return;
+            //     var ss = 34;
+            // }
+            // fn()
+
+    //  3.匿名函数不进行变量提升
+  //（function(){}）()
+// 4、变量提升发生在等号左边
+        // var a = function(){}
+
+
+
+
+
+        f = function(){return true}
+        g = function(){return false}
+        ~function(){
+        if(g() && [] == ![]){ 
+            f = function(){return false}
+              }
+        }();
+
+        console.log(f())
+        console.log(g())
+
+       
+
+
+    var ary = [12, 23];
+
+    function fn(ary) {
+        console.log(ary);  //[12, 23]
+        ary[0] = 100;      //[100,23]
+        ary = [100];
+        ary[0] = 0;       //[0,23]
+        console.log(ary);  //
+    }
+    fn(ary);
+    console.log(ary);   //0
+
+    console.log(a)  //undefined
+    if(!('a' in window)){
+        var a = 13   
+    }
+
+    console.log(a)   //undefined
+
+    var s = 5;1
+    function fn() {
+        var n = 0;
+        function f() {
+            n++;
+            console.log(n);  //1
+        }
+        f();       
+        return f;
+    }
+    var r = fn();     //1
+    r();  //2
+    console.log(s);//5
+
+    var a = 4;
+    var f = 3;
+    function b(x,y,a) {
+        alert(a);      //3
+        // 形参和arguments存在映射关系；
+        arguments[2]=10;   
+        alert(a);    //10
+    }
+    a=b(1,2,f);
+    alert(a);   //undefined
+    console.log(f);  //3
+
+    var i = 5;
+    function fn(i) {
+        return function (n) {
+            console.log(n + (++i));
+        }
+    }
+    var f = fn(1);
+    f(2);       //4
+    fn(3)(4);    //8
+    fn(5)(6);    //12
+    f(7);        //10
+    console.log(i); //5
+
+
+
+
+    var foo='hello';
+    (function(foo){
+        console.log(foo);   //'hello'
+        var foo=foo||'world';  
+        console.log(foo); //'hello'
+    })(foo);
+    console.log(foo);//'hello'
+
+
+        f = function(){return true}
+        g = function(){return false}
+        ~function(){
+            if(g() && [] == ![]){
+                f = function(){return false}
+                function g(){return true} 
+            }
+        }();
+
+console.log(f())
+console.log(g())
+       
+       </script>
+</body>
+</html>

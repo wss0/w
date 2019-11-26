@@ -1,0 +1,13 @@
+### JS中的数据类型检测                                                             [] {} null
+- typeof [val]: 来用来检测数据类型的运算符  只能返回number string boolean  nudefined object function
+- instanceof：用来检测当前实例是否率属于某个类
+- constructor：基于构造函数检测数据类型（也是基于类的方式）
+- Object.prototype.toString.call(): 检测数据类型最好的办法
+
+
+* 基于typeof检测出来的结果:
+  1.首先是一个字符串
+  2.字符串中包含对应的类型
+* 局限性:
+  1.typeof null=>"object" 但是null不是对象
+  2.无法区分：普通对象 数组 null 因为返回都是"object"  

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>递归</title>
+</head>
+<body>
+    <script>
+    /* 
+    递归：就是函数自己调用自己，直到满足某些条件就停止递归
+    */  
+
+    // 实现1到5之间的偶数的和
+    function sum(num){
+        if(num>5){
+            return  0
+        }
+        if(num%2 === 1){
+            return num + sum(num+1)
+        }
+        return sum(num+1)
+    }
+    console.log(sum(1)) // 6
+
+   
+    
+
+    // function sum(1){
+    //     return sum(1+1) // 6
+    // }
+
+    // function sum(2){
+    //         return 2 + sum(2+1) // 4
+    // }
+
+    // function sum(3){
+    //     return sum(3+1) // 4
+    // }
+
+    // function sum(4){
+    //         return 4 + sum(4+1) // 0
+    // }
+
+        // function sum(5){
+    //     return sum(5+1) // 0
+    // }
+
+    // function sum(6){
+    //         return 0
+    // }
+    </script>
+    <script>
+    //     let ary = [3,2,1];
+    //     function quick(ary){
+
+    //   //  4、如果数组中的length小于等于1，那就结束递归，把原数组return出去
+    //     if(ary.length<=1){
+    //         return ary
+    //     }
+
+    //     // 1、获取中间的一项作为基准（并且把原数组中的那一项删除）
+    //         let middleIndex = Math.floor(ary.length/2) // 拿到中间项的索引   
+    //         let middleValue = ary.splice(middleIndex,1)[0];  //索引有可能是数组  取数组中的第一位
+    //     // 2、创建两个数组，循环数组的每一项和基准做比较，如果每一项小于基准，就放到左边数组，反之放右边
+    //         let leftAry = [];
+    //         let rightAry = [];
+    //         for (var i = 0; i < ary.length; i++) {
+    //            if(ary[i]<middleValue){
+    //                leftAry.push(ary[i])
+    //            }
+    //            else{
+    //                rightAry.push(ary[i])
+    //            }
+    //         }
+
+    //        // 3、不断重复1和2步骤（递归）
+    //       return  quick(leftAry).concat(middleValue, quick(rightAry))
+    //     }   
+    //     console.log(quick(ary))
+
+        
+
+    </script>
+</body>
+</html>

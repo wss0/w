@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  /*  1.新建数组    不能改变原数组  所以打印时不能为原数组  打印fn(str)
+            indexOf 没有返回-1    
+            includes 没有返回false
+    2.两个for循环
+
+    3.新建对象{1: 1, 2: 2, 3: 3}  返回键值对形式
+       A: 新建对象.属性名 如果是undefined 证明新对象中没有     new[str[i]] = str[i];
+                                                                     数组值
+                                                              属性名    = 属性值
+                      不是undefined   证明新对象中有        删除当前位  当前位--
+            
+       B：新建对象.属性名 是undefined证明没有      new[str[i]] = str[i];
+                                                    数组值
+                                                 属性名    = 属性值
+                         不是undefined     让最后一位代替重复那位
+                                            删除最后一位    
+                                            --  
+    */
+    
+      //1.新建数组
+    //   let str = [1,1,2,2,3,3,4];
+    //   function fn (str){
+    //       var newArr = [];
+    //       for(var i = 0; i < str.length; i ++){
+    //           let item = str[i];    //当 i = 0 时  item=1
+    //           //新数组里的1没有会返回-1
+    //           if(newArr.indexOf(item) === -1){
+    //               newArr.push(item);
+    //           }
+    //       }
+    //       return  newArr
+    //   }
+    //   console.log(fn(str));
+    
+    //    let str = [1,1,2,2,3,3,4];
+    //    function fn (str){
+    //        var newArr = [];
+    //        for(var i = 0; i < str.length; i ++){
+    //            let item = str[i];   
+    //            if(!newArr.(item)){
+    //                newArr.push(item);
+    //            }
+    //        }
+    //        return newArr
+    //    }
+    //    console.log(fn(str))
+    
+    //2.两个for循环
+          
+//    let str = [1,1,1,2];
+//    function fn(str){
+//        for(var i = 0; i < str.length; i ++){
+//            let item = str[i];
+//            //i+1  要从第二个 1 开始和第一个 1 作比较   第二个1 的位置  i+1（索引位置）
+//            for(var j = i + 1; j < str.length; j ++){
+//                  let cur = str[j];
+//                  if (item == cur){
+//                      str.splice(j,1);    //从j位置删除一位
+//                      j--;
+//                  }
+//            }
+//        }
+//        return str;
+//    }
+//    fn(str);
+//    console.log(str);
+
+
+        //3.新建对象
+       //  let str = [1,1,1,2,3];
+        // function fn (str){
+        //     var newObj = {};
+        //     for(var i = 0; i < str.length; i++){
+        //         //当item为1时  新对象中没有   对象名.没有的属性名 为undefined
+        //         if(newObj[str[i]] !== undefined){
+        //                 str.splice(i,1);
+        //                 i--;
+        //         }else{
+        //             newObj[str[i]] = str[i];
+        //         }
+        //     }
+        //     return newObj;
+        // }
+        // console.log(fn(str));
+        
+
+    //  let str = [1,1,2];
+    //  function fn (str){
+    //      var newObj = {};
+    //      for(var i = 0; i < str.length; i ++){
+    //          if(newObj[str[i]] == undefined){
+    //             newObj[str[i]] = str[i];
+    //          }else{         
+    //              str[i] = str[str.length-1];
+    //             str.length--;
+    //             i--
+    //          }
+    //      }
+    //      return newObj
+    //  }
+    //  console.log(fn(str));
+     
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

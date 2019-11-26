@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     /* 
+       1、每一个函数（普通函数、构造函数）都天生自带一个prototype属性，属性值是一个对象，他里面存储的是实例的公有属性（原型）
+       2、每一个原型都天生自带一个constructor属性，指向当前类
+       3、每一个对象都天生自带一个__proto__属性，指向当前所属类的原型
+       */
+     
+       function Fn(x, y) {
+            this.x = x;
+            this.y = y;
+            this.getX = function () {
+                 console.log(this.x);
+             }
+        }
+ // Fn.prototype{getX,getY,a=300}
+        Fn.prototype.getX = function () {
+            console.log(this.x);
+        }
+        Fn.prototype.getY = function () {
+            console.log(this.y);
+        }
+        var f1 = new Fn(100, 200);//{x=100 , y=200 , getX=function, __proto__=Object.prototype, }
+        f1.__proto__.a = 300;
+        var f2 = new Fn(100, 200);//{x=100 , y=200 , getX=function, __proto__=Object.prototype, }
+        console.log(f1.getX == f2.getX); //false
+        console.log(f1.getY == f2.getY);//true
+        console.log(f1.x == f2.x);//true
+        console.log(Fn.prototype.getX === f1.getX);//false
+        console.log(Fn.prototype.getX === f1.__proto__.getX);//true
+        f1.getX()//this:f1   f1.x=100
+        Fn.prototype.getX();//this:Fn.prototype   undefined
+        f2.__proto__.getX();//  this: f2.__proto__   undefined
+        Fn.prototype.getY();//undefined
+        console.log(f1.a);//300
+        console.log(f1.toString);//
+
+
+    </script> 
+</body>
+</html>

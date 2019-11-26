@@ -1,0 +1,482 @@
+.content{
+    background: url(../img/background.jpg) no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 640px;
+}
+.main{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+}
+header .logo{
+    float: left;
+    width: 107px;
+    height: 50px;
+}
+header .logo img{
+    width: 100%;
+    margin-top: 20px;
+}
+header span i{
+    float:left;
+    background: url(../img/site.png) no-repeat;
+    width:15px;
+    height:15px;
+    margin-top: 42px;
+    padding-right: 3px;
+}
+header  span{
+    float: left;
+    line-height: 100px;
+    color: #fff;
+    padding-left: 8px;
+}
+
+header nav{
+    float: right;
+}
+
+header nav li{
+    float: left;
+}
+
+nav a{
+    margin-left: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height:100px;
+}
+nav  .nomargin{
+    margin-left:0px;
+}
+/* 导航上面 */
+header .nav-up{
+    float: right;
+    position: relative;
+    top: -25px;
+    left: 510px;
+
+}
+header .nav-up a{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+header .nav-up i{
+    background: url(../img/ren.png) no-repeat;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+nav .nav-up a:hover{color: red;}
+nav .nav-top a:hover {color: red;}
+
+/* 搜索框 */
+ .middle{
+    width: 1000px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+ .middle .middle-up h1{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+}
+ .middle .middle-up p{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+.middle .middle-low{
+    width: 812px;
+    height: 150px;
+    margin: 0 auto;
+}
+ .middle .middle-low .middle-nav{
+    margin-top: 40px;
+}
+ .middle .middle-low .middle-nav a{
+    font-size: 14px;
+    color: #fff;
+    margin-right: 20px;
+    font-weight: 700;
+}
+.middle .middle-low .box {
+    margin-top: 30px;
+}
+.middle .middle-low .box .text{
+    font-size: 20px;
+    width: 580px;
+    height: 53px;
+    border: solid 1px #888;
+    border-radius: 1px;
+}
+ .middle .middle-low .box .button{
+    font-size: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 54px;
+    background:rgb(39, 158, 39);
+    border: 1px solid rgb(39, 158, 39);
+    border-radius: 1px;
+    position: relative;
+    left: -4px;
+    top: 2px;
+    line-height: 50px;
+    text-align: center;
+    color:#fff;
+}
+.middle .middle-low .box :placeholder-shown{
+    font-size: 15px;
+    color: #888;
+    padding-left: 10px;
+}
+/* 左下 */
+.bottom{
+    margin-top: 230px;
+}
+.bottom a{
+    color: #fff;
+    font-size: 13px;
+    margin-right: 50px;
+}
+.bottom .one{
+    float: left;
+}
+.bottom .one .gantan{
+    width: 16px;
+    height: 16px;
+}
+.bottom .two{
+    float: left;
+}
+.bottom .two .shu{
+   
+    width: 16px;
+    height: 16px;
+}
+ .bottom a:hover{
+    color: red;
+}
+.middle .middle-low .middle-nav a:hover{
+    color: red;
+}
+/* 列表 */
+.list{
+    margin-top: 50px;
+}
+
+ .list li{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.list img{
+    width: 76px;
+    height: 65px;
+}
+
+ .list h2{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+ .list p{
+    font-size: 14px;
+    color: #b0b3b4;
+}
+/* foryouforhom */
+.foryou{
+    background: url(../img/for\ you\ for\ home.jpg) no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 524px;
+    margin-top: 50px;
+}
+.foryou .forhome{
+    width: 480px;
+    height: 200px;
+}
+.foryou .foryou-cont{
+   padding-top: 30px;
+}
+.foryou h1{
+    font-size: 50px;
+    font-weight:3;
+}
+
+.foryou p{
+    width: 500px;
+    font-size: 15px;
+    margin-top: 20px;   
+}
+.foryou img{
+    display: block;
+    width: 134px;
+    height: 44px;
+    margin-top: 20px;
+    
+}
+.foryou .erweima{
+    width: 110px;
+    height: 110px;
+    position: relative;
+    top: -130px;
+    left: 150px;
+}
+
+/* 二手房 */
+.two-good,.newhome{
+    margin-top: 50px;
+}
+.two-good .name,.newhome .name{
+    font-size: 33px;
+    display: inline;
+}
+.two-good .name-nomal,.suggest .name-nomal, .newhome .name-nomal{
+    font-weight: 100;
+    font-size: 33px;
+    display: inline-block;
+}
+.two-good p,.newhome p{
+    color: #888;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.two-good li{
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.two-good img{
+    width: 280px;
+    height: 210px;
+    border-radius: 3%;
+}
+.two-good .name-right{
+    position: relative;
+    top:-20px;
+    left: 1050px;
+    color: #888;
+    font-size: 16px;
+}
+.two-good .clear h2{
+    font-weight: 510;
+    font-size: 18px;
+    color: black;
+}
+.two-good .clear p{
+    font-size: 12px;
+}
+.two-good .clear .red{
+    color: red;
+    font-size: 15px;
+    position: relative;
+    top: -28px;
+    left: 240px;
+}
+/* 小区推荐 */
+.suggest{
+    background: rgb(226, 225, 225);
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}
+.suggest .samll{
+    padding-top: 40px;
+}
+.suggest .name{
+    font-size: 33px;
+    display: inline;
+    margin-left: -19px;
+}
+
+.suggest p{
+    color: #888;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.suggest li,.newhome li{
+    float: left;
+    margin-right: 32px;
+    margin-top: 30px;
+    width: 366px;
+    height: 285px;
+    background: #fff;
+    border-radius: 3% 3% 0 0;
+}
+
+.suggest img {
+    width: 366px;
+    height: 200px;
+    border-radius: 3% 3% 0 0;
+}
+.suggest .nomargin,.suggest .nomargin{
+    margin-right: 0;
+}
+.suggest .year{
+    color: #888;
+    font-size: 15px;
+    position: relative;
+    top: -2px;
+    left: 250px;
+}
+.suggest  h4{  
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.suggest h2{
+    position: relative;
+    left: 20px;
+    top: 18px;
+    font-weight: 510;
+    font-size: 18px;
+    color: black;
+}
+/* 新房 */
+.newhome img{
+    width: 366px;
+    height: 250px;
+}
+
+.newhome a strong{
+    position: relative;
+    top:-150px;
+    left: 90px;
+    color: #fff;
+    font-size: 26px;
+}
+.newhome a b{
+    color: #fff2ab;
+    font-size: 20px;
+    position: relative;
+    top: -120px;
+    left: -55px;
+}
+/* footer-bg */
+.footer-bg{
+    background: url(../img/footer-bg.jpg) no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 248px;
+}
+.footer-bg img{
+    width: 450px;
+    height: 105px;
+    margin-top: 80px;
+}
+
+.footer-bg  p{
+    float: right;
+    font-size: 18px;
+    margin-top: -120px;
+    margin-right: 150px;
+    color: #fff
+}
+.footer-bg  .true{
+    margin-top: -90px;
+    margin-right: 169px; 
+    color: #fff;
+}
+.footer-bg .import{
+    position: relative;
+}
+.footer-bg  input{
+    width:500px;
+    height:35px;
+    position: absolute;
+    left: 670px;
+    bottom: 20px;
+}
+.footer-bg .sub img{
+    width: 17px;
+    height: 18px;
+    position: absolute;
+    left: 1140px;
+    bottom: 30px;
+}
+/* footer */
+.footer-background{
+    background: url(../img/footer-background.jpg) no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 430px;
+}
+.footer-background .footer-header li a{
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.footer-background .nomargin{
+    margin-right: 0;
+}
+.footer-background .footer-header span a{
+    float: right;
+    font-size: 15px;
+    color: forestgreen;
+    margin-top: -20px;
+    
+}
+.footer-background .footer-header{
+    height: 80px;
+    border-bottom: 1px solid rgb(119, 118, 118); 
+}
+/* 点击出现  mid*/
+.footer-background .mid .mid-list{
+    border-bottom: 1px solid rgb(119, 118, 118);
+}
+.footer-background .mid .mid-top span{
+    display: inline-block;
+    padding: 8px 10px;
+    background: #121212;
+    color: #888c8e;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.footer-background .mid .mid-top span.hover {
+    background: #394043;
+    color: #fff;
+}
+/* mid-list */
+.footer-background .mid .mid-list div{
+    display: none;
+    margin-bottom: 50px;
+}
+
+.footer-background .mid-list div dd a {
+    color: #888c8e;
+    font-size: 12px;
+    display: inline-block;
+    margin: 10px 10px 0 0;
+}
+.footer-background .mid-top .hover:hover dd{
+    display: block;
+}
+/* 最底部 */
+.footer-bottom p{
+    color: #fff;
+    font-size: 10px;
+    margin-top: 10px;
+}
+.footer-bottom img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}

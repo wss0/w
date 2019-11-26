@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    function fn (){
+        let total = null;
+        for(var i = 0; i < arguments.length; i++){
+            let item = arguments[i];
+            // total += item; 
+            if(!isNaN(item)){
+                total += item; 
+            }
+        }
+         return total;
+    }
+    let num = fn(1,2,'34',NaN)
+    console.log(num);
+
+
+    let total = null;
+    arr.forEach((item,index) => {
+        let cur = Number(item)
+        if(!isNaN(cur)){
+            total+= cur; 
+        } 
+    })
+    let arr = [1,2,'34',NaN];
+    console.log(total);
+    
+    let num = fn(1,2,'34',NaN)
+    console.log(num);
+
+
+// let fn = (...arg) => {
+//         let total = null;
+//         for(var i = 0; i < arg.length; i++){
+//             let item = arg[i];
+//             // total += item; 
+//             if(!isNa(Number(item))){
+//                 total += item; 
+//             }
+//         }
+//          return total;
+//     }
+//     let num = fn(1,2,'34',NaN)
+//     console.log(num);
+
+//
+
+
+</script>
+</body>
+</html>

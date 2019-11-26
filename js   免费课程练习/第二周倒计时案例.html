@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #box{
+                color: salmon;
+               background: -webkit-linear-gradient(top right,pink,white,pink);
+                font-size: 50px;
+                font-weight: 500;
+                width: 1000px;
+                height: 400px;
+                line-height: 400px;
+                margin: 100px auto;
+                text-align: center;
+                border: 1px solid red;
+            }
+    </style>        
+</head>
+<body>
+     <div id="box">111 </div> 
+     <script>
+         let box = document.getElementById('box');
+         let endTime = new Date('2019-11-14 13:10');
+         let num = null;
+         setTime();
+         function setTime(){
+
+             let time  = new Date();// 创建现在的时间
+             let diffTime = endTime - time; // 获得现在时间个结束时间的 时间差（单位是毫秒）
+            //  console.log(diffTime)
+
+            if(diffTime<=0){
+                 clearInterval(num);
+                 box.innerText = '时间到';
+                 return;
+             }
+
+                              //            秒  分  时
+            let hour = Math.floor(diffTime/1000/60/60);
+            let min = Math.floor((diffTime-hour*60*60*1000)  /1000/60)   //分
+                                           //  分  秒  毫秒
+            let sec = Math.floor((diffTime-hour*60*60*1000-min*60*1000) /1000)  //秒
+            let  value = hour+'时'+min+'分'+sec+'秒';
+            box.innerText = value;
+         }
+        
+          num = setInterval(setTime,100);
+
+     </script>
+</body>
+</html>

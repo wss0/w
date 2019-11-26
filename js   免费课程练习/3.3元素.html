@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box" style="background:red" ></div>
+    <script>
+
+
+        //    div.onclick = function (){
+        //      if(div.style.background === "black"){
+        //          div.style.background = 'red';
+        //      }else if (div.style.background === 'red'){
+        //         div.style.background = "yellow";
+        //      }else{
+        //          div.style.background = "blue";
+        //      }
+        //    }
+        // console.dir(div);
+
+
+        //作业红   黑    黄    蓝   红    用switch case
+
+        // div.style.background = "black";
+        let box = document.getElementById('box');
+        box.onclick = function (){
+            let color =box.style.background;
+            switch (color){
+              case 'red': 
+               box.style.background = 'black';
+                break;
+              case 'black': 
+               box.style.background = 'yellow';
+                break;
+              case 'yellow': 
+               box.style.background = 'blue';
+                break;
+              case 'blue': 
+               box.style.background = 'red';
+                break;
+            }
+        }
+     
+    </script>
+    <script>
+            //  在html中叫标签，在JS叫元素；JS中的元素都是对象数据类型的；
+            // 1. 要想操作谁，就要先获取谁；
+            // 1. document.getElementById ： 在document文本下，通过id获取元素
+            // document: 上下文文本
+            // get : 获取
+            // Element : 元素
+            // By : 通过
+            // Id: id名；
+            let div1 = document.getElementById("box");
+            div1.onclick =function () {
+                // 这里面代码不运行；当点击元素的时候，这个函数就会执行；
+                //console.log(200);
+                if(div1.style.background==="black"){
+                    div1.style.background="red";
+                }else{
+                    div1.style.background="black";
+                }
+            }
+            //{style:{background:"red"}}
+        
+        
+        </script>
+</body>
+
+</html>

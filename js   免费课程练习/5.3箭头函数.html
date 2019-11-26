@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //1. 如果只有一个形参可以省略小括号
+    //2. 如果函数体中只有一行return代码  可以省略 {}  return
+    //3. 如果return{}，需要加上小括号
+    //4.箭头函数没有this
+    //5.箭头函数没有arguments
+    </script>
+
+
+
+    <script>
+    //  arrow function 箭头函数   es6  
+  //优点  : 简单
+//   function sum(n, m){          //es5
+//       return n+m;
+//   }
+//   let sum = (n,m)  => {
+//       return n+m
+//   }
+//     //如果函数体中只有一行return代码   
+//     let sum = (n,m) => n+m
+//     console.log(sum(10,20))
+
+
+
+//1.如果只有一个形参，可以省略小括号
+//function fu(m){}
+
+// let fn = (m) =>{ console.log(m) }; fn(3);
+// let fn = m => {
+//      console.log(m)
+//     }
+//   fn(3);
+
+
+//2.如果函数体中只有一行return代码   
+// function fn(n){
+//     return function (m) {
+//         return console.log(1);
+//     }
+// }
+//let ss = fn();
+//ss();
+//fn()();
+//fn() 只是获得的第一个函数 () 第二个函数执行
+// let fn = n => m => {
+//     console.log(1)
+// }
+//  let ss = fn();
+//  ss();
+
+
+
+// function fn (m) {
+//     return 3;
+// }
+
+// let fn = m => 3;
+
+// console.log(fn())
+
+//3.如果return{}，需要加上小括号
+// let fn = () => {
+//     return {};
+// }
+// //let fn = () => {}  //最后会为undefined     
+// let fn = () => ({})
+
+//4.箭头函数没有this  arguments
+//箭头函数中的任意求和 es6
+//  收缩运算符  形参（....arg）
+// 展开运算符   可以用在很多地方
+// let fn = (...arg) => {
+//     console.log(arg);        //把所有的实参收集到变量a中  以数组的形式展示
+
+//    let arr = [1,2,3]
+//    console.log(...arr)   //1 2 3   展开
+
+// }
+
+// fn(1,2,3,4)
+
+// let arr = [1,2,3,5];
+// let arr1 = [...arr];    //展开
+// console.log(arr1)
+
+//展开数组   新增
+//   let arr = [1,2,3,4];
+//   let arr1 = [12, ...arg];   //在开头新增
+//   console.log(arr1)
+
+
+let fn = (...arg) => {
+        let total = null;
+        for(var i = 0; i < arg.length; i++){
+            let item = arg[i];
+            // total += item; 
+            if(!isNaN(item)){
+                total += item; 
+            }
+        }
+         return total;
+    }
+let num = fn(1,2,'34',NaN)
+console.log(num);
+
+// function fn (){
+//     let total = null;
+//     for(var i = 0; i <arguments.length; i ++ ){
+//         var  item = arguments[i];
+//         if(!isNaN(item)){
+//             total += item;
+//         }
+//     }
+//     return total;
+// }
+// console.log(fn(1,2,4,6,'23'));
+
+
+
+//给形参默认值
+//如果函数不传实参，那就走默认值，如果函数执行传了实参，就走实参值
+// function fn (n,m){
+//     console.log(n,m);  //nudefined,nudefined
+//     let total = n+m;   //nudefined+nudefined 
+//     return total;      //NaN + NaN
+// }
+// fn();  //NaN
+
+// function fn (n=0,m=0){   //赋默认值
+//     console.log(n,m);    //0 0
+//     let total = n+m;
+//     return total;
+// }
+// fn();
+
+
+    </script>
+</body>
+</html>

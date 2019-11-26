@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//
+//    let ary = [2,3,5]
+//     Object.prototype.hasPubProperty = function (value){
+//         let ary = ['number','string'];
+//         if(ary.indexOf (typeof (value)) == -1){
+//             return false;
+//         }
+//         let n = value in this;
+//         let m = this.hasOwnProperty(value);
+//         if(n===true && m===false){
+//             return true;
+//         }else{
+//             return false;
+//         }
+//     }
+
+//  console.log(ary.hasPubProperty('push')) // true  
+  
+
+  
+    //数组去重在原项链上编程
+     //ary是Array的实例
+     let ary = [1,1,3,4]
+     Array.prototype.myUnique = myUnique; 
+     function myUnique(){
+            console.log(this)
+        let obj = {};
+        for (var i = 0; i < this.length; i++) {
+            if(obj[this[i]] !== undefined){
+                this[i] = this[this.length-1];
+                this.length--;
+                i--;
+                continue;
+            }
+            obj[this[i]] = this[i]
+        }
+        return this
+    }
+    
+    </script>
+</body>
+</html>

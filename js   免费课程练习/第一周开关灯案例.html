@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #box{
+        width: 500px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    #box p {
+        font-size: 12px;
+        color: red;
+        cursor: pointer;
+    }
+    #box img{
+        /* display: block; */
+        width: 500px;
+    }
+    /* #box .hide{
+        display: none;
+    } */
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p id="btn">隐藏</p>
+        <img src="
+        https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1573150275632&di=8a7f6c6ddf4656c1a67b519bb7244be9&imgtype=jpg&src=http%3A%2F%2Fimgsa.baidu.com%2Fexp%2Fw%3D500%2Fsign%3Df0c47dd191504fc2a25fb005d5dfe7f0%2F6d81800a19d8bc3e6edff713888ba61ea9d34510.jpg
+        " alt="" id="pig">
+    </div>
+    <script>
+    
+    let btn = document.getElementById('btn');
+    let pig = document.getElementById('pig');
+    btn.onclick = function(){
+        let value = btn.innerText
+        console.log(value)
+        if(value==='隐藏'){
+            btn.innerText = '显示';
+            pig.style.display='none';
+        }else{
+            btn.innerText = '隐藏';
+            pig.style.display='block';
+        }
+    }
+
+
+    // btn.onclick = function(){
+    //     let value = btn.innerText;
+    //     if(value==='隐藏'){
+    //         btn.innerText = '显示';
+    //         pig.className = 'hide';
+    //     }else{
+    //         btn.innerText = '隐藏';
+    //         pig.className = '';
+    //     }
+    // }
+    
+    
+    
+    </script>
+</body>
+</html>
